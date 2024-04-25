@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Overlay</title>
+    <style>
+        body {
+            font-size: 18px;
+        }
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="font-size: 24px;">Arush18R</h1>
+        <h2 style="font-size: 22px;">Welcome to Overlay Download Page</h2>
+        <p style="font-size: 20px;">To download the Overlay, please click the button below to subscribe to our YouTube channel:</p>
+        <button class="button" onclick="openYouTube()">Subscribe to my channel</button>
+        <p id="downloadMessage" style="font-size: 20px; display:none;">Click the link below to download the Overlay:</p>
+        <a id="downloadLink" href="https://drive.google.com/file/d/1tVR_s73EYECc_hEugMc5CZ8QH-6MFxbX/view?usp=drivesdk" download style="display:none;"><button class="button">Download Overlay</button></a>
+    </div>
+
+    <script>
+        function openYouTube() {
+            window.open('https://youtube.com/@arush18R?si=rqp2utIBOHvQXk5g', '_blank');
+            document.getElementById('downloadMessage').style.display = 'block';
+            document.getElementById('downloadLink').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
